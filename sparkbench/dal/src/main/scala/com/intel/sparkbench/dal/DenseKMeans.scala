@@ -21,6 +21,7 @@ import org.apache.hadoop.io.LongWritable
 import org.apache.mahout.math.VectorWritable
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.log4j.{Level, Logger}
 import daal_for_mllib.{KMeans, DAALKMeansModel => KMeansModel}
 import scopt.OptionParser
 

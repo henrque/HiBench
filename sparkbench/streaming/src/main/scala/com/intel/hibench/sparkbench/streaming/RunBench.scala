@@ -14,26 +14,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.intel.hibench.sparkbench.streaming
 
 import com.intel.hibench.common.HiBenchConfig
 import com.intel.hibench.common.streaming.{TestCase, StreamBenchConfig, Platform, ConfigLoader}
 import com.intel.hibench.common.streaming.metrics.MetricsUtil
 import com.intel.hibench.sparkbench.streaming.util.SparkBenchConfig
-import com.intel.hibench.sparkbench.streaming.application._
-import kafka.serializer.StringDecoder
+import org.apache.kafka.common.serialization.StringDeserializer
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.dstream.DStream
-import org.apache.spark.streaming.kafka.KafkaUtils
+import org.apache.spark.sql.streaming.{ConsumerStrategy, KafkaUtils, LocationStrategies}
 import org.apache.spark.streaming.{Milliseconds, StreamingContext}
-
+import org.apache.spark.sql.types._
+import org.apache.spark.sql.functions._
 /**
   * The entry point of Spark Streaming benchmark
   */
 object RunBench {
 
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
     val conf = new ConfigLoader(args(0))
 
     // Load configuration

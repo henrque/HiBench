@@ -51,6 +51,22 @@
       </activation>
     </profile>
 
+    <profile>
+      <id>spark3.1</id>
+      <dependencies>
+	<dependency>
+         <groupId>org.apache.spark</groupId>
+	 <artifactId>spark-sql-kafka-0-10_2.12</artifactId>
+	 <version>3.1.1</version>
+	 </dependency>
+      </dependencies>
+      <activation>
+        <property>
+          <name>spark</name>
+          <value>3.1</value>
+        </property>
+      </activation>
+    </profile>
 
     <profile>
       <id>spark2.0</id>
