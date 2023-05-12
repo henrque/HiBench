@@ -14,8 +14,8 @@
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
     <encoding>UTF-8</encoding>
-    <scala.version>2.11.8</scala.version>
-    <scala.binary.version>2.10</scala.binary.version>
+    <scala.version>2.12.17</scala.version>
+    <scala.binary.version>2.12</scala.binary.version>
     <slf4j.version>1.7.5</slf4j.version>
     <scopt.version>3.7.0</scopt.version>
     <mahout.version>0.9</mahout.version>
@@ -117,19 +117,19 @@
       </modules>
     </profile>
 
-    <profile>
+    <!-- <profile>
       <id>flinkbench</id>
       <modules>
         <module>flinkbench</module>
       </modules>
-    </profile>
+    </profile> -->
 
-    <profile>
+    <!-- <profile>
       <id>gearpumpbench</id>
       <modules>
         <module>gearpumpbench</module>
       </modules>
-    </profile>
+    </profile> -->
 
     <profile>
       <id>hadoopbench</id>
@@ -138,21 +138,21 @@
       </modules>
     </profile>
 
-    <profile>
+    <!-- <profile>
       <id>stormbench</id>
       <modules>
         <module>stormbench</module>
       </modules>
-    </profile>
+    </profile> -->
 
     <profile>
       <id>defaultbench</id>
       <modules>
         <module>sparkbench</module>
-        <module>flinkbench</module>
-        <module>gearpumpbench</module>
+        <!-- <module>flinkbench</module> -->
+        <!-- <module>gearpumpbench</module> -->
         <module>hadoopbench</module>
-        <module>stormbench</module>
+        <!-- <module>stormbench</module> -->
       </modules>
       <activation>
         <property>

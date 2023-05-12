@@ -23,8 +23,9 @@ import kafka.common.ErrorMapping._
 import kafka.common.TopicAndPartition
 import kafka.consumer.{ConsumerConfig, SimpleConsumer}
 import kafka.message.MessageAndOffset
-import kafka.utils.{ZKStringSerializer, ZkUtils, Utils}
+import kafka.utils.{ ZkUtils}
 import org.I0Itec.zkclient.ZkClient
+import org.apache.kafka.common.utils.Utils
 
 class KafkaConsumer(zookeeperConnect: String, topic: String, partition: Int) {
 
@@ -67,14 +68,15 @@ class KafkaConsumer(zookeeperConnect: String, topic: String, partition: Int) {
   }
 
   private def createConsumer: SimpleConsumer = {
-    val zkClient = new ZkClient(zookeeperConnect, 6000, 6000, ZKStringSerializer)
+    val zkClient = new ZkClient(zookeeperConnect, 6000, 6000)
+    val zkUtils = new ZkUtils(zkClient, null, false)
     try {
-      val leader = ZkUtils.getLeaderForPartition(zkClient, topic, partition)
+      val leader = zkUtils.getLeaderForPartition(topic, partition)
           .getOrElse(throw new RuntimeException(
             s"leader not available for TopicAndPartition($topic, $partition)"))
-      val broker = ZkUtils.getBrokerInfo(zkClient, leader)
+      val broker = zkUtils.getBrokerInfo(leader)
           .getOrElse(throw new RuntimeException(s"broker info not found for leader $leader"))
-      new SimpleConsumer(broker.host, broker.port,
+      new SimpleConsumer("localhost", 9092,
         config.socketTimeoutMs, config.socketReceiveBufferBytes, CLIENT_ID)
     } catch {
       case e: Exception =>

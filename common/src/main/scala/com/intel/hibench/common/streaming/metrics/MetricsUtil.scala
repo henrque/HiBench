@@ -20,6 +20,7 @@ import com.intel.hibench.common.streaming.Platform
 import kafka.admin.AdminUtils
 import kafka.utils.ZKStringSerializer
 import org.I0Itec.zkclient.ZkClient
+import kafka.utils.{ ZkUtils}
 
 object MetricsUtil {
 
@@ -34,10 +35,11 @@ object MetricsUtil {
   }
 
   def createTopic(zkConnect: String, topic: String, partitions: Int): Unit = {
-    val zkClient = new ZkClient(zkConnect, 6000, 6000, ZKStringSerializer)
+    val zkClient = new ZkClient(zkConnect, 6000, 6000)
+    val zkUtils = new ZkUtils(zkClient, null, false)
     try {
-      AdminUtils.createTopic(zkClient, topic, partitions, 1)
-      while (!AdminUtils.topicExists(zkClient, topic)) {
+      AdminUtils.createTopic(zkUtils, topic, partitions, 1)
+      while (!AdminUtils.topicExists(zkUtils, topic)) {
         Thread.sleep(100)
       }
     } catch {
