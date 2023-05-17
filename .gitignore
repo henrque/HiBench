@@ -20,3 +20,5 @@ conf/hibench.conf
 conf/hadoop.conf
 conf/spark.conf
 *.conf
+.metals/
+```

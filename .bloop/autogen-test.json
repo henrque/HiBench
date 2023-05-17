@@ -21,30 +21,16 @@
             "C:\\Users\\henrq\\OneDrive\\Área de Trabalho\\tcc-bench\\HiBench\\autogen\\target\\classes",
             "C:\\Users\\henrq\\.m2\\repository\\com\\codahale\\metrics\\metrics-jvm\\3.0.2\\metrics-jvm-3.0.2.jar",
             "C:\\Users\\henrq\\.m2\\repository\\com\\codahale\\metrics\\metrics-core\\3.0.2\\metrics-core-3.0.2.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka_2.12\\0.10.2.2\\kafka_2.12-0.10.2.2.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\net\\sf\\jopt-simple\\jopt-simple\\5.0.3\\jopt-simple-5.0.3.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka_2.12\\2.7.2\\kafka_2.12-2.7.2.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka-raft\\2.7.2\\kafka-raft-2.7.2.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-csv\\2.10.5\\jackson-dataformat-csv-2.10.5.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.10.5\\jackson-datatype-jdk8-2.10.5.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\net\\sf\\jopt-simple\\jopt-simple\\5.0.4\\jopt-simple-5.0.4.jar",
             "C:\\Users\\henrq\\.m2\\repository\\com\\yammer\\metrics\\metrics-core\\2.2.0\\metrics-core-2.2.0.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\com\\101tec\\zkclient\\0.10\\zkclient-0.10.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\mahout\\mahout-core\\0.9\\mahout-core-0.9.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\codehaus\\jackson\\jackson-core-asl\\1.9.12\\jackson-core-asl-1.9.12.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\codehaus\\jackson\\jackson-mapper-asl\\1.9.12\\jackson-mapper-asl-1.9.12.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.5\\slf4j-api-1.7.5.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.1\\commons-lang3-3.1.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\com\\thoughtworks\\xstream\\xstream\\1.4.4\\xstream-1.4.4.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\xmlpull\\xmlpull\\1.1.3.1\\xmlpull-1.1.3.1.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\xpp3\\xpp3_min\\1.1.4c\\xpp3_min-1.1.4c.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\lucene\\lucene-core\\4.6.1\\lucene-core-4.6.1.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\lucene\\lucene-analyzers-common\\4.6.1\\lucene-analyzers-common-4.6.1.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\mahout\\commons\\commons-cli\\2.0-mahout\\commons-cli-2.0-mahout.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\commons\\commons-math3\\3.2\\commons-math3-3.2.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\solr\\solr-commons-csv\\3.5.0\\solr-commons-csv-3.5.0.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\mahout\\mahout-math\\0.9\\mahout-math-0.9.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\uncommons\\maths\\uncommons-maths\\1.2.2a\\uncommons-maths-1.2.2a.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\jfree\\jcommon\\1.0.12\\jcommon-1.0.12.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\jfree\\jfreechart\\1.0.8a\\jfreechart-1.0.8a.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka-clients\\0.8.2.2\\kafka-clients-0.8.2.2.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\xerial\\snappy\\snappy-java\\1.1.1.7\\snappy-java-1.1.1.7.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\net\\jpountz\\lz4\\lz4\\1.2.0\\lz4-1.2.0.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\scala-lang\\modules\\scala-collection-compat_2.12\\2.2.0\\scala-collection-compat_2.12-2.2.0.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\scala-lang\\modules\\scala-java8-compat_2.12\\0.9.1\\scala-java8-compat_2.12-0.9.1.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\scala-lang\\scala-reflect\\2.12.12\\scala-reflect-2.12.12.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\com\\typesafe\\scala-logging\\scala-logging_2.12\\3.9.2\\scala-logging_2.12-3.9.2.jar",
             "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\hadoop\\hadoop-hdfs\\3.2.1\\hadoop-hdfs-3.2.1.jar",
             "C:\\Users\\henrq\\.m2\\repository\\org\\eclipse\\jetty\\jetty-server\\9.3.24.v20180605\\jetty-server-9.3.24.v20180605.jar",
             "C:\\Users\\henrq\\.m2\\repository\\org\\eclipse\\jetty\\jetty-http\\9.3.24.v20180605\\jetty-http-9.3.24.v20180605.jar",
@@ -68,6 +54,27 @@
             "C:\\Users\\henrq\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.9.8\\jackson-databind-2.9.8.jar",
             "C:\\Users\\henrq\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.9.0\\jackson-annotations-2.9.0.jar",
             "C:\\Users\\henrq\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-core\\2.9.8\\jackson-core-2.9.8.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\mahout\\mahout-core\\0.9\\mahout-core-0.9.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\codehaus\\jackson\\jackson-core-asl\\1.9.12\\jackson-core-asl-1.9.12.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\codehaus\\jackson\\jackson-mapper-asl\\1.9.12\\jackson-mapper-asl-1.9.12.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.5\\slf4j-api-1.7.5.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.1\\commons-lang3-3.1.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\com\\thoughtworks\\xstream\\xstream\\1.4.4\\xstream-1.4.4.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\xmlpull\\xmlpull\\1.1.3.1\\xmlpull-1.1.3.1.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\xpp3\\xpp3_min\\1.1.4c\\xpp3_min-1.1.4c.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\lucene\\lucene-core\\4.6.1\\lucene-core-4.6.1.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\lucene\\lucene-analyzers-common\\4.6.1\\lucene-analyzers-common-4.6.1.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\mahout\\commons\\commons-cli\\2.0-mahout\\commons-cli-2.0-mahout.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\commons\\commons-math3\\3.2\\commons-math3-3.2.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\solr\\solr-commons-csv\\3.5.0\\solr-commons-csv-3.5.0.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\mahout\\mahout-math\\0.9\\mahout-math-0.9.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\uncommons\\maths\\uncommons-maths\\1.2.2a\\uncommons-maths-1.2.2a.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\jfree\\jcommon\\1.0.12\\jcommon-1.0.12.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\jfree\\jfreechart\\1.0.8a\\jfreechart-1.0.8a.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka-clients\\2.7.2\\kafka-clients-2.7.2.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\com\\github\\luben\\zstd-jni\\1.4.5-6\\zstd-jni-1.4.5-6.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\lz4\\lz4-java\\1.7.1\\lz4-java-1.7.1.jar",
+            "C:\\Users\\henrq\\.m2\\repository\\org\\xerial\\snappy\\snappy-java\\1.1.7.7\\snappy-java-1.1.7.7.jar",
             "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\hadoop\\hadoop-client\\3.2.1\\hadoop-client-3.2.1.jar",
             "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\hadoop\\hadoop-common\\3.2.1\\hadoop-common-3.2.1.jar",
             "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.5.6\\httpclient-4.5.6.jar",
@@ -154,8 +161,6 @@
             "C:\\Users\\henrq\\.m2\\repository\\log4j\\log4j\\1.2.17\\log4j-1.2.17.jar",
             "C:\\Users\\henrq\\.m2\\repository\\org\\slf4j\\slf4j-log4j12\\1.7.16\\slf4j-log4j12-1.7.16.jar",
             "C:\\Users\\henrq\\.m2\\repository\\com\\ning\\compress-lzf\\1.0.3\\compress-lzf-1.0.3.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\lz4\\lz4-java\\1.4.0\\lz4-java-1.4.0.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\com\\github\\luben\\zstd-jni\\1.3.2-2\\zstd-jni-1.3.2-2.jar",
             "C:\\Users\\henrq\\.m2\\repository\\org\\roaringbitmap\\RoaringBitmap\\0.5.11\\RoaringBitmap-0.5.11.jar",
             "C:\\Users\\henrq\\.m2\\repository\\commons-net\\commons-net\\3.1\\commons-net-3.1.jar",
             "C:\\Users\\henrq\\.m2\\repository\\org\\json4s\\json4s-jackson_2.12\\3.5.3\\json4s-jackson_2.12-3.5.3.jar",
@@ -186,7 +191,6 @@
             "C:\\Users\\henrq\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-json\\3.1.5\\metrics-json-3.1.5.jar",
             "C:\\Users\\henrq\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-graphite\\3.1.5\\metrics-graphite-3.1.5.jar",
             "C:\\Users\\henrq\\.m2\\repository\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.12\\2.6.7.1\\jackson-module-scala_2.12-2.6.7.1.jar",
-            "C:\\Users\\henrq\\.m2\\repository\\org\\scala-lang\\scala-reflect\\2.12.1\\scala-reflect-2.12.1.jar",
             "C:\\Users\\henrq\\.m2\\repository\\com\\fasterxml\\jackson\\module\\jackson-module-paranamer\\2.7.9\\jackson-module-paranamer-2.7.9.jar",
             "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\ivy\\ivy\\2.4.0\\ivy-2.4.0.jar",
             "C:\\Users\\henrq\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar",
@@ -370,22 +374,6 @@
                     ]
                 },
                 {
-                    "organization": "org.xerial.snappy",
-                    "name": "snappy-java",
-                    "version": "1.1.1.7",
-                    "artifacts": [
-                        {
-                            "name": "snappy-java",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\xerial\\snappy\\snappy-java\\1.1.1.7\\snappy-java-1.1.1.7.jar"
-                        },
-                        {
-                            "name": "snappy-java",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\xerial\\snappy\\snappy-java\\1.1.1.7\\snappy-java-1.1.1.7-sources.jar"
-                        }
-                    ]
-                },
-                {
                     "organization": "com.esotericsoftware",
                     "name": "kryo-shaded",
                     "version": "4.0.2",
@@ -530,22 +518,6 @@
                     ]
                 },
                 {
-                    "organization": "com.101tec",
-                    "name": "zkclient",
-                    "version": "0.10",
-                    "artifacts": [
-                        {
-                            "name": "zkclient",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\com\\101tec\\zkclient\\0.10\\zkclient-0.10.jar"
-                        },
-                        {
-                            "name": "zkclient",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\com\\101tec\\zkclient\\0.10\\zkclient-0.10-sources.jar"
-                        }
-                    ]
-                },
-                {
                     "organization": "javax.servlet.jsp",
                     "name": "jsp-api",
                     "version": "2.1",
@@ -618,6 +590,22 @@
                             "name": "error_prone_annotations",
                             "classifier": "sources",
                             "path": "C:\\Users\\henrq\\.m2\\repository\\com\\google\\errorprone\\error_prone_annotations\\2.2.0\\error_prone_annotations-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_2.12",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_2.12",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\scala-lang\\modules\\scala-collection-compat_2.12\\2.2.0\\scala-collection-compat_2.12-2.2.0.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\scala-lang\\modules\\scala-collection-compat_2.12\\2.2.0\\scala-collection-compat_2.12-2.2.0-sources.jar"
                         }
                     ]
                 },
@@ -714,6 +702,22 @@
                             "name": "jersey-container-servlet-core",
                             "classifier": "sources",
                             "path": "C:\\Users\\henrq\\.m2\\repository\\org\\glassfish\\jersey\\containers\\jersey-container-servlet-core\\2.22.2\\jersey-container-servlet-core-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.luben",
+                    "name": "zstd-jni",
+                    "version": "1.4.5-6",
+                    "artifacts": [
+                        {
+                            "name": "zstd-jni",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\com\\github\\luben\\zstd-jni\\1.4.5-6\\zstd-jni-1.4.5-6.jar"
+                        },
+                        {
+                            "name": "zstd-jni",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\com\\github\\luben\\zstd-jni\\1.4.5-6\\zstd-jni-1.4.5-6-sources.jar"
                         }
                     ]
                 },
@@ -901,6 +905,22 @@
                             "name": "j2objc-annotations",
                             "classifier": "sources",
                             "path": "C:\\Users\\henrq\\.m2\\repository\\com\\google\\j2objc\\j2objc-annotations\\1.1\\j2objc-annotations-1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.xerial.snappy",
+                    "name": "snappy-java",
+                    "version": "1.1.7.7",
+                    "artifacts": [
+                        {
+                            "name": "snappy-java",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\xerial\\snappy\\snappy-java\\1.1.7.7\\snappy-java-1.1.7.7.jar"
+                        },
+                        {
+                            "name": "snappy-java",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\xerial\\snappy\\snappy-java\\1.1.7.7\\snappy-java-1.1.7.7-sources.jar"
                         }
                     ]
                 },
@@ -1484,22 +1504,6 @@
                     ]
                 },
                 {
-                    "organization": "com.github.luben",
-                    "name": "zstd-jni",
-                    "version": "1.3.2-2",
-                    "artifacts": [
-                        {
-                            "name": "zstd-jni",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\com\\github\\luben\\zstd-jni\\1.3.2-2\\zstd-jni-1.3.2-2.jar"
-                        },
-                        {
-                            "name": "zstd-jni",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\com\\github\\luben\\zstd-jni\\1.3.2-2\\zstd-jni-1.3.2-2-sources.jar"
-                        }
-                    ]
-                },
-                {
                     "organization": "oro",
                     "name": "oro",
                     "version": "2.0.8",
@@ -1512,6 +1516,22 @@
                             "name": "oro",
                             "classifier": "sources",
                             "path": "C:\\Users\\henrq\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-java8-compat_2.12",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "scala-java8-compat_2.12",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\scala-lang\\modules\\scala-java8-compat_2.12\\0.9.1\\scala-java8-compat_2.12-0.9.1.jar"
+                        },
+                        {
+                            "name": "scala-java8-compat_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\scala-lang\\modules\\scala-java8-compat_2.12\\0.9.1\\scala-java8-compat_2.12-0.9.1-sources.jar"
                         }
                     ]
                 },
@@ -1735,22 +1755,6 @@
                     ]
                 },
                 {
-                    "organization": "org.apache.kafka",
-                    "name": "kafka-clients",
-                    "version": "0.8.2.2",
-                    "artifacts": [
-                        {
-                            "name": "kafka-clients",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka-clients\\0.8.2.2\\kafka-clients-0.8.2.2.jar"
-                        },
-                        {
-                            "name": "kafka-clients",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka-clients\\0.8.2.2\\kafka-clients-0.8.2.2-sources.jar"
-                        }
-                    ]
-                },
-                {
                     "organization": "com.github.fommil.netlib",
                     "name": "core",
                     "version": "1.1.2",
@@ -1859,6 +1863,22 @@
                             "name": "lucene-analyzers-common",
                             "classifier": "sources",
                             "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\lucene\\lucene-analyzers-common\\4.6.1\\lucene-analyzers-common-4.6.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka-raft",
+                    "version": "2.7.2",
+                    "artifacts": [
+                        {
+                            "name": "kafka-raft",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka-raft\\2.7.2\\kafka-raft-2.7.2.jar"
+                        },
+                        {
+                            "name": "kafka-raft",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka-raft\\2.7.2\\kafka-raft-2.7.2-sources.jar"
                         }
                     ]
                 },
@@ -2151,6 +2171,22 @@
                     ]
                 },
                 {
+                    "organization": "org.lz4",
+                    "name": "lz4-java",
+                    "version": "1.7.1",
+                    "artifacts": [
+                        {
+                            "name": "lz4-java",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\lz4\\lz4-java\\1.7.1\\lz4-java-1.7.1.jar"
+                        },
+                        {
+                            "name": "lz4-java",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\lz4\\lz4-java\\1.7.1\\lz4-java-1.7.1-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "org.slf4j",
                     "name": "jul-to-slf4j",
                     "version": "1.7.16",
@@ -2307,6 +2343,22 @@
                             "name": "spire-macros_2.12",
                             "classifier": "sources",
                             "path": "C:\\Users\\henrq\\.m2\\repository\\org\\spire-math\\spire-macros_2.12\\0.13.0\\spire-macros_2.12-0.13.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.12.12",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\scala-lang\\scala-reflect\\2.12.12\\scala-reflect-2.12.12.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\scala-lang\\scala-reflect\\2.12.12\\scala-reflect-2.12.12-sources.jar"
                         }
                     ]
                 },
@@ -2535,6 +2587,22 @@
                     ]
                 },
                 {
+                    "organization": "com.fasterxml.jackson.dataformat",
+                    "name": "jackson-dataformat-csv",
+                    "version": "2.10.5",
+                    "artifacts": [
+                        {
+                            "name": "jackson-dataformat-csv",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-csv\\2.10.5\\jackson-dataformat-csv-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-dataformat-csv",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-csv\\2.10.5\\jackson-dataformat-csv-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "com.fasterxml.jackson.jaxrs",
                     "name": "jackson-jaxrs-json-provider",
                     "version": "2.9.8",
@@ -2579,6 +2647,22 @@
                             "name": "kerby-pkix",
                             "classifier": "sources",
                             "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kerby\\kerby-pkix\\1.0.1\\kerby-pkix-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jdk8",
+                    "version": "2.10.5",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.10.5\\jackson-datatype-jdk8-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.10.5\\jackson-datatype-jdk8-2.10.5-sources.jar"
                         }
                     ]
                 },
@@ -2675,6 +2759,22 @@
                             "name": "zookeeper",
                             "classifier": "sources",
                             "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\zookeeper\\zookeeper\\3.4.6\\zookeeper-3.4.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.sf.jopt-simple",
+                    "name": "jopt-simple",
+                    "version": "5.0.4",
+                    "artifacts": [
+                        {
+                            "name": "jopt-simple",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\net\\sf\\jopt-simple\\jopt-simple\\5.0.4\\jopt-simple-5.0.4.jar"
+                        },
+                        {
+                            "name": "jopt-simple",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\net\\sf\\jopt-simple\\jopt-simple\\5.0.4\\jopt-simple-5.0.4-sources.jar"
                         }
                     ]
                 },
@@ -2823,6 +2923,22 @@
                     ]
                 },
                 {
+                    "organization": "com.typesafe.scala-logging",
+                    "name": "scala-logging_2.12",
+                    "version": "3.9.2",
+                    "artifacts": [
+                        {
+                            "name": "scala-logging_2.12",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\com\\typesafe\\scala-logging\\scala-logging_2.12\\3.9.2\\scala-logging_2.12-3.9.2.jar"
+                        },
+                        {
+                            "name": "scala-logging_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\com\\typesafe\\scala-logging\\scala-logging_2.12\\3.9.2\\scala-logging_2.12-3.9.2-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "org.apache.kerby",
                     "name": "kerby-xdr",
                     "version": "1.0.1",
@@ -2856,17 +2972,17 @@
                 },
                 {
                     "organization": "org.apache.kafka",
-                    "name": "kafka_2.12",
-                    "version": "0.10.2.2",
+                    "name": "kafka-clients",
+                    "version": "2.7.2",
                     "artifacts": [
                         {
-                            "name": "kafka_2.12",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka_2.12\\0.10.2.2\\kafka_2.12-0.10.2.2.jar"
+                            "name": "kafka-clients",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka-clients\\2.7.2\\kafka-clients-2.7.2.jar"
                         },
                         {
-                            "name": "kafka_2.12",
+                            "name": "kafka-clients",
                             "classifier": "sources",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka_2.12\\0.10.2.2\\kafka_2.12-0.10.2.2-sources.jar"
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka-clients\\2.7.2\\kafka-clients-2.7.2-sources.jar"
                         }
                     ]
                 },
@@ -2926,22 +3042,6 @@
                         {
                             "name": "listenablefuture",
                             "path": "C:\\Users\\henrq\\.m2\\repository\\com\\google\\guava\\listenablefuture\\9999.0-empty-to-avoid-conflict-with-guava\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.lz4",
-                    "name": "lz4-java",
-                    "version": "1.4.0",
-                    "artifacts": [
-                        {
-                            "name": "lz4-java",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\lz4\\lz4-java\\1.4.0\\lz4-java-1.4.0.jar"
-                        },
-                        {
-                            "name": "lz4-java",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\lz4\\lz4-java\\1.4.0\\lz4-java-1.4.0-sources.jar"
                         }
                     ]
                 },
@@ -3282,22 +3382,6 @@
                     ]
                 },
                 {
-                    "organization": "org.scala-lang",
-                    "name": "scala-reflect",
-                    "version": "2.12.1",
-                    "artifacts": [
-                        {
-                            "name": "scala-reflect",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\scala-lang\\scala-reflect\\2.12.1\\scala-reflect-2.12.1.jar"
-                        },
-                        {
-                            "name": "scala-reflect",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\scala-lang\\scala-reflect\\2.12.1\\scala-reflect-2.12.1-sources.jar"
-                        }
-                    ]
-                },
-                {
                     "organization": "org.apache.kerby",
                     "name": "kerby-util",
                     "version": "1.0.1",
@@ -3469,6 +3553,22 @@
                     ]
                 },
                 {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka_2.12",
+                    "version": "2.7.2",
+                    "artifacts": [
+                        {
+                            "name": "kafka_2.12",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka_2.12\\2.7.2\\kafka_2.12-2.7.2.jar"
+                        },
+                        {
+                            "name": "kafka_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\kafka\\kafka_2.12\\2.7.2\\kafka_2.12-2.7.2-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "org.apache.httpcomponents",
                     "name": "httpcore",
                     "version": "4.4.10",
@@ -3545,22 +3645,6 @@
                             "name": "arrow-memory",
                             "classifier": "sources",
                             "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\arrow\\arrow-memory\\0.10.0\\arrow-memory-0.10.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "net.jpountz.lz4",
-                    "name": "lz4",
-                    "version": "1.2.0",
-                    "artifacts": [
-                        {
-                            "name": "lz4",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\net\\jpountz\\lz4\\lz4\\1.2.0\\lz4-1.2.0.jar"
-                        },
-                        {
-                            "name": "lz4",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\net\\jpountz\\lz4\\lz4\\1.2.0\\lz4-1.2.0-sources.jar"
                         }
                     ]
                 },
@@ -3673,22 +3757,6 @@
                             "name": "hadoop-common",
                             "classifier": "sources",
                             "path": "C:\\Users\\henrq\\.m2\\repository\\org\\apache\\hadoop\\hadoop-common\\3.2.1\\hadoop-common-3.2.1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "net.sf.jopt-simple",
-                    "name": "jopt-simple",
-                    "version": "5.0.3",
-                    "artifacts": [
-                        {
-                            "name": "jopt-simple",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\net\\sf\\jopt-simple\\jopt-simple\\5.0.3\\jopt-simple-5.0.3.jar"
-                        },
-                        {
-                            "name": "jopt-simple",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\henrq\\.m2\\repository\\net\\sf\\jopt-simple\\jopt-simple\\5.0.3\\jopt-simple-5.0.3-sources.jar"
                         }
                     ]
                 },

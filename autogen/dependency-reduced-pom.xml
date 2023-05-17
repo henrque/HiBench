@@ -188,24 +188,12 @@
           <groupId>com.ning</groupId>
         </exclusion>
         <exclusion>
-          <artifactId>lz4-java</artifactId>
-          <groupId>org.lz4</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>zstd-jni</artifactId>
-          <groupId>com.github.luben</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>RoaringBitmap</artifactId>
           <groupId>org.roaringbitmap</groupId>
         </exclusion>
         <exclusion>
           <artifactId>scala-xml_2.12</artifactId>
           <groupId>org.scala-lang.modules</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>scala-reflect</artifactId>
-          <groupId>org.scala-lang</groupId>
         </exclusion>
         <exclusion>
           <artifactId>json4s-jackson_2.12</artifactId>
@@ -258,10 +246,6 @@
         <exclusion>
           <artifactId>metrics-jmx</artifactId>
           <groupId>io.dropwizard.metrics</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jackson-module-scala_2.12</artifactId>
-          <groupId>com.fasterxml.jackson.module</groupId>
         </exclusion>
         <exclusion>
           <artifactId>ivy</artifactId>
@@ -351,6 +335,10 @@
       <version>3.1.1</version>
       <scope>provided</scope>
       <exclusions>
+        <exclusion>
+          <artifactId>scala-parser-combinators_2.12</artifactId>
+          <groupId>org.scala-lang.modules</groupId>
+        </exclusion>
         <exclusion>
           <artifactId>spark-streaming_2.12</artifactId>
           <groupId>org.apache.spark</groupId>
