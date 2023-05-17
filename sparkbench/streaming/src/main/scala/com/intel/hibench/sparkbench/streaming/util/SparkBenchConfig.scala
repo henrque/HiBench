@@ -56,8 +56,6 @@ case class SparkBenchConfig (
     "group.id" -> consumerGroup,
     "zookeeper.connect" -> zkHost,
     "metadata.broker.list" -> brokerList,
-    "key.deserializer" -> classOf[StringDeserializer],
-    "value.deserializer" -> classOf[StringDeserializer],
   )
 
   def threadsPerReceiver = coreNumber / receiverNumber
