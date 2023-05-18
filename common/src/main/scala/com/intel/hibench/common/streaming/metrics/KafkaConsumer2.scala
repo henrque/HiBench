@@ -30,6 +30,7 @@ class KafkaConsumer2(zookeeperConnect: String, topic: String, partition: Int) {
   private val props = new Properties()
   props.put("zookeeper.connect", zookeeperConnect)
   props.put("group.id", CLIENT_ID)
+  props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
   private val config = new ConsumerConfig(props)
   private val consumer = createConsumer
   private val topicPartition = new TopicPartition(topic, partition)
