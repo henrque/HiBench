@@ -28,9 +28,10 @@ import org.apache.kafka.common.TopicPartition
 class KafkaConsumer2(zookeeperConnect: String, topic: String, partition: Int) {
   private val CLIENT_ID = "metrics_reader"
   private val props = new Properties()
-  props.put("zookeeper.connect", zookeeperConnect)
+  props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG , zookeeperConnect)
   props.put("group.id", CLIENT_ID)
   props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
+  props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, classOf[ByteArrayDeserializer].getName)
   private val config = new ConsumerConfig(props)
   private val consumer = createConsumer
   private val topicPartition = new TopicPartition(topic, partition)
