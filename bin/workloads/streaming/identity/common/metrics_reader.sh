@@ -25,7 +25,7 @@ show_bannar start
 
 printFullLog
 
-${STREAMING_KAFKA_HOME}/bin/kafka-topics.sh --zookeeper ${STREAMING_ZKADDR} --list
+${STREAMING_KAFKA_HOME}/bin/kafka-topics.sh --bootstrap-server ${STREAMING_ZKADDR} --list
 
 read -p "Please input the topic:" TOPIC
 
