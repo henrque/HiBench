@@ -156,7 +156,7 @@ There are totally 29 workloads in HiBench. The workloads are divided into 6 cate
   - Flink: 1.0.3
   - Storm: 1.0.1
   - Gearpump: 0.8.1
-  - Kafka: 0.8.2.2
+  - Kafka: 2.7.2
 
 ---
 
