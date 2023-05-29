@@ -35,11 +35,6 @@
   </properties>
 
   <dependencies>
-	  <dependency>
-<groupId>com.google.guava</groupId>
-<artifactId>guava</artifactId>
-<version>27.0-jre</version>
-</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -117,19 +112,18 @@
       </modules>
     </profile>
 
-    <!-- <profile>
+    <profile>
       <id>flinkbench</id>
       <modules>
         <module>flinkbench</module>
       </modules>
-    </profile> -->
-
-    <!-- <profile>
+    </profile>
+    <profile>
       <id>gearpumpbench</id>
       <modules>
         <module>gearpumpbench</module>
       </modules>
-    </profile> -->
+    </profile>
 
     <profile>
       <id>hadoopbench</id>
@@ -138,21 +132,21 @@
       </modules>
     </profile>
 
-    <!-- <profile>
+    <profile>
       <id>stormbench</id>
       <modules>
         <module>stormbench</module>
       </modules>
-    </profile> -->
+    </profile>
 
     <profile>
       <id>defaultbench</id>
       <modules>
         <module>sparkbench</module>
-        <!-- <module>flinkbench</module> -->
-        <!-- <module>gearpumpbench</module> -->
+        <module>flinkbench</module>
+        <module>gearpumpbench</module>
         <module>hadoopbench</module>
-        <!-- <module>stormbench</module> -->
+        <module>stormbench</module>
       </modules>
       <activation>
         <property>

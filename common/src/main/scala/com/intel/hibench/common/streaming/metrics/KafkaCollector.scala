@@ -114,11 +114,11 @@ class KafkaCollector(
       outputFileWriter.append(header)
     }
     val time = new Date(System.currentTimeMillis()).toString
+    val count = histogram.getCount
     val snapshot = histogram.getSnapshot
-    val countValue = histogram.getCount
-    val throughput = countValue * 1000 / (maxTime - minTime)
+    val throughput = count * 1000 / (maxTime - minTime)
     outputFileWriter.append(
-      s"$time,$countValue,$throughput," +
+      s"$time,$count,$throughput," +
         s"${formatDouble(snapshot.getMax)}," +
         s"${formatDouble(snapshot.getMean)}," +
         s"${formatDouble(snapshot.getMin)}," +

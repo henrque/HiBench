@@ -57,8 +57,6 @@ case class SparkBenchConfig (
     ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG -> brokerList,
     ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG -> classOf[StringDeserializer],
     ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG -> classOf[StringDeserializer],
-    ConsumerConfig.AUTO_OFFSET_RESET_CONFIG -> "earliest",
-  // Other Kafka configuration properties...
   ) 
 
   def threadsPerReceiver = coreNumber / receiverNumber
