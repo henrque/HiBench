@@ -69,7 +69,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.flink</groupId>
-      <artifactId>flink-connector-kafka-0.8_${scala.binary.version}</artifactId>
+      <artifactId>flink-connector-kafka-0.8_2.11</artifactId>
       <version>${flinkVersion}</version>
       <scope>compile</scope>
       <exclusions>
@@ -85,7 +85,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.flink</groupId>
-      <artifactId>flink-streaming-java_${scala.binary.version}</artifactId>
+      <artifactId>flink-streaming-java_2.11</artifactId>
       <version>${flinkVersion}</version>
       <scope>compile</scope> <exclusions>
       <exclusion>
