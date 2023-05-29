@@ -26,7 +26,7 @@ class FetchJob(zkConnect: String, topic: String, partition: Int,
 
   override def call(): FetchJobResult = {
     val result = new FetchJobResult()
-    val consumer = new KafkaConsumer(zkConnect, topic, partition)
+    val consumer = new KafkaConsumer2(zkConnect, topic, partition)
     while (consumer.hasNext) {
       val times = new String(consumer.next(), "UTF-8").split(":")
       val startTime = times(0).toLong

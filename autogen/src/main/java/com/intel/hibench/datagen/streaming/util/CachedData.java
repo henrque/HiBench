@@ -50,7 +50,7 @@ public class CachedData {
   private CachedData(String seedFile, long fileOffset, String dfsMaster){
     Configuration dfsConf = new Configuration();
     dfsConf.set("fs.default.name", dfsMaster);
-
+    dfsConf.set("fs.hdfs.impl", "org.apache.hadoop.hdfs.DistributedFileSystem");
     // read records from seedFile and cache into "data"
     data = new ArrayList<String>();
     BufferedReader reader = SourceFileReader.getReader(dfsConf, seedFile, fileOffset);

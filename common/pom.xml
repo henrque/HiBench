@@ -40,18 +40,13 @@
     </dependency>
     <dependency>
       <groupId>org.apache.kafka</groupId>
-      <artifactId>kafka_${scala.binary.version}</artifactId>
-      <version>0.8.2.1</version>
-      <exclusions>
-        <exclusion>
-          <groupId>log4j</groupId>
-          <artifactId>log4j</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.slf4j</groupId>
-          <artifactId>slf4j-log4j12</artifactId>
-        </exclusion>
-      </exclusions>
+      <artifactId>kafka_2.12</artifactId>
+      <version>2.7.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka-clients</artifactId>
+      <version>2.7.2</version>
     </dependency>
   </dependencies>
 
@@ -107,8 +102,8 @@
     <profile>
       <id>defaultScalaVersion</id>
       <properties>
-        <scala.version>2.11.8</scala.version>
-        <scala.binary.version>2.11</scala.binary.version>
+        <scala.version>2.12.17</scala.version>
+        <scala.binary.version>2.12</scala.binary.version>
       </properties>
       <activation>
         <property>

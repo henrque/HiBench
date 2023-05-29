@@ -17,12 +17,12 @@
 package com.intel.hibench.common.streaming.metrics
 
 import com.intel.hibench.common.streaming.Platform
-import kafka.admin.AdminUtils
-import kafka.utils.ZKStringSerializer
-import org.I0Itec.zkclient.ZkClient
+import org.apache.kafka.clients.admin.{AdminClient, NewTopic}
+import org.apache.kafka.clients.consumer.ConsumerConfig
+import org.apache.kafka.common.serialization.StringSerializer
+import scala.collection.JavaConverters._
 
 object MetricsUtil {
-
   val TOPIC_CONF_FILE_NAME = "metrics_topic.conf"
 
   def getTopic(platform: Platform, sourceTopic: String, producerNum: Int,
@@ -34,17 +34,20 @@ object MetricsUtil {
   }
 
   def createTopic(zkConnect: String, topic: String, partitions: Int): Unit = {
-    val zkClient = new ZkClient(zkConnect, 6000, 6000, ZKStringSerializer)
-    try {
-      AdminUtils.createTopic(zkClient, topic, partitions, 1)
-      while (!AdminUtils.topicExists(zkClient, topic)) {
-        Thread.sleep(100)
-      }
-    } catch {
-      case e: Exception =>
-        throw e
-    } finally {
-      zkClient.close()
+    val config = Map[String, Object](
+      ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG -> zkConnect,
+      ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG -> classOf[StringSerializer].getName,
+      ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG -> classOf[StringSerializer].getName
+    ).asJava
+
+    val adminClient = AdminClient.create(config)
+    val newTopic = new NewTopic(topic, partitions, 1.toShort)
+    adminClient.createTopics(List(newTopic).asJava).all().get()
+
+    while (!adminClient.listTopics().names().get().contains(topic)) {
+      Thread.sleep(100)
     }
+
+    adminClient.close()
   }
 }

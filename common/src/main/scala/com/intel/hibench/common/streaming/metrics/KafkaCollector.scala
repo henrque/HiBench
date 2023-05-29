@@ -21,15 +21,24 @@ import java.io.{FileWriter, File}
 import java.util.Date
 import java.util.concurrent.{TimeUnit, Future, Executors}
 
+import org.apache.kafka.common.utils.Utils
+import org.apache.kafka.common.utils.Utils._
+import org.apache.kafka.clients.consumer.ConsumerConfig
+import org.apache.kafka.clients.consumer.{ConsumerConfig, KafkaConsumer}
+import org.apache.kafka.common.TopicPartition
+import org.apache.kafka.common.serialization.StringDeserializer
 import com.codahale.metrics.{UniformReservoir, Histogram}
-import kafka.utils.{ZKStringSerializer, ZkUtils}
-import org.I0Itec.zkclient.ZkClient
+import scala.collection.JavaConverters._
 
 import scala.collection.mutable.ArrayBuffer
 
-
-class KafkaCollector(zkConnect: String, metricsTopic: String,
-    outputDir: String, sampleNumber: Int, desiredThreadNum: Int) extends LatencyCollector {
+class KafkaCollector(
+    zkConnect: String,
+    metricsTopic: String,
+    outputDir: String,
+    sampleNumber: Int,
+    desiredThreadNum: Int
+) extends LatencyCollector {
 
   private val histogram = new Histogram(new UniformReservoir(sampleNumber))
   private val threadPool = Executors.newFixedThreadPool(desiredThreadNum)
@@ -49,30 +58,47 @@ class KafkaCollector(zkConnect: String, metricsTopic: String,
     threadPool.shutdown()
     threadPool.awaitTermination(30, TimeUnit.MINUTES)
 
-    val finalResults = fetchResults.map(_.get()).reduce((a, b) => {
-      val minTime = Math.min(a.minTime, b.minTime)
-      val maxTime = Math.max(a.maxTime, b.maxTime)
-      val count = a.count + b.count
-      new FetchJobResult(minTime, maxTime, count)
-    })
+    val finalResults = fetchResults
+      .map(_.get())
+      .reduce((a, b) => {
+        val minTime = Math.min(a.minTime, b.minTime)
+        val maxTime = Math.max(a.maxTime, b.maxTime)
+        val count = a.count + b.count
+        new FetchJobResult(minTime, maxTime, count)
+      })
 
     report(finalResults.minTime, finalResults.maxTime, finalResults.count)
   }
 
   private def getPartitions(topic: String, zkConnect: String): Seq[Int] = {
-    val zkClient = new ZkClient(zkConnect, 6000, 6000, ZKStringSerializer)
+    val props = new java.util.Properties()
+    props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, zkConnect)
+    props.put(
+      ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
+      classOf[StringDeserializer].getName
+    )
+    props.put(
+      ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
+      classOf[StringDeserializer].getName
+    )
+    props.put(ConsumerConfig.GROUP_ID_CONFIG, "metrics_reader")
+
+    val consumer = new KafkaConsumer[String, String](props)
+    consumer.subscribe(java.util.Collections.singletonList(topic))
+
     try {
-      ZkUtils.getPartitionsForTopics(zkClient, Seq(topic)).flatMap(_._2).toSeq
+      val partitions = consumer.partitionsFor(topic)
+      partitions.asScala.map(_.partition()).toSeq
     } finally {
-      zkClient.close()
+      consumer.close()
     }
   }
-
 
   private def report(minTime: Long, maxTime: Long, count: Long): Unit = {
     val outputFile = new File(outputDir, metricsTopic + ".csv")
     println(s"written out metrics to ${outputFile.getCanonicalPath}")
-    val header = "time,count,throughput(msgs/s),max_latency(ms),mean_latency(ms),min_latency(ms)," +
+    val header =
+      "time,count,throughput(msgs/s),max_latency(ms),mean_latency(ms),min_latency(ms)," +
         "stddev_latency(ms),p50_latency(ms),p75_latency(ms),p95_latency(ms),p98_latency(ms)," +
         "p99_latency(ms),p999_latency(ms)\n"
     val fileExists = outputFile.exists()
@@ -91,17 +117,19 @@ class KafkaCollector(zkConnect: String, metricsTopic: String,
     val count = histogram.getCount
     val snapshot = histogram.getSnapshot
     val throughput = count * 1000 / (maxTime - minTime)
-    outputFileWriter.append(s"$time,$count,$throughput," +
+    outputFileWriter.append(
+      s"$time,$count,$throughput," +
         s"${formatDouble(snapshot.getMax)}," +
         s"${formatDouble(snapshot.getMean)}," +
         s"${formatDouble(snapshot.getMin)}," +
         s"${formatDouble(snapshot.getStdDev)}," +
         s"${formatDouble(snapshot.getMedian)}," +
-        s"${formatDouble(snapshot.get75thPercentile())}," +
-        s"${formatDouble(snapshot.get95thPercentile())}," +
-        s"${formatDouble(snapshot.get98thPercentile())}," +
-        s"${formatDouble(snapshot.get99thPercentile())}," +
-        s"${formatDouble(snapshot.get999thPercentile())}\n")
+        s"${formatDouble(snapshot.get75thPercentile)}," +
+        s"${formatDouble(snapshot.get95thPercentile)}," +
+        s"${formatDouble(snapshot.get98thPercentile)}," +
+        s"${formatDouble(snapshot.get99thPercentile)}," +
+        s"${formatDouble(snapshot.get999thPercentile)}\n"
+    )
     outputFileWriter.close()
   }
 
@@ -110,5 +138,3 @@ class KafkaCollector(zkConnect: String, metricsTopic: String,
   }
 
 }
-
-

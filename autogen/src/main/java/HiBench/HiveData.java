@@ -399,20 +399,21 @@ public class HiveData {
 	
 		@Override
 		public void map(LongWritable key, Text value,
-				OutputCollector<LongWritable, JoinBytesInt> output, Reporter reporter)
-						throws IOException {
-	
-			int slotId = Integer.parseInt(value.toString().trim());
-			visit.fireRandom(slotId);
+    OutputCollector<LongWritable, JoinBytesInt> output, Reporter reporter) throws IOException {
+    try {
+        int slotId = Integer.parseInt(value.toString().trim());
+        visit.fireRandom(slotId);
+        for (long i=slotId; i<=visits;) {
+            key.set(visit.nextUrlId());
+            output.collect(key, vitem);
+            i = i + slots;
+        }
+    } catch (NullPointerException e) {
+        e.printStackTrace();
+    }
+}
 
-			for (long i=slotId; i<=visits;) {
-				// simply setting url id is fine in map step
-				key.set(visit.nextUrlId());
-				output.collect(key, vitem);
-				i = i + slots;
-			}
 		}
-	}
 
 	public static class SequenceRankingsToUrlsMapper extends MapReduceBase implements
 	Mapper<LongWritable, Text, LongWritable, JoinBytesInt> {
