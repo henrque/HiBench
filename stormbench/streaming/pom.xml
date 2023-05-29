@@ -82,7 +82,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.kafka</groupId>
-      <artifactId>kafka_${scala.binary.version}</artifactId>
+      <artifactId>kafka_2.11</artifactId>
       <version>0.8.2.1</version>
       <exclusions>
         <exclusion>
